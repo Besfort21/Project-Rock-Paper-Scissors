@@ -81,10 +81,12 @@ function game(){
     let npc = 0;
 
     for(let i = 0;i<5;i++){
-        if(gameRound() == 0){
+
+        let x = gameRound();
+        if(x == 0){
             npc += 1;
         }
-        else if(gameRound() == 1){
+        else if(x == 1){
             player+=1;
         }
         
